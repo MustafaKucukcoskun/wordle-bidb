@@ -93,5 +93,3 @@ Oyun sonunda istatistiklerinizi görebilirsiniz:
 Bu proje eğitim amacıyla geliştirilmiştir.
 
 ---
-
-**BİDB** tarafından ❤️ ile geliştirilmiştir.

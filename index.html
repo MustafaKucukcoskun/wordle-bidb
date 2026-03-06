@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Türkçe Wordle oyunu - BİDB tarafından geliştirildi. Kolay, Orta ve Zor zorluk seviyeleriyle kelimeleri tahmin et!">
+  <meta name="description"
+    content="Türkçe Wordle oyunu - BİDB tarafından geliştirildi. Kolay, Orta ve Zor zorluk seviyeleriyle kelimeleri tahmin et!">
   <meta name="theme-color" content="#1a1a2e">
   <title>WORDLE-BİDB</title>
   <link rel="icon" type="image/svg+xml" href="logo.svg">
@@ -24,18 +25,20 @@
 
   <div id="toast-container"></div>
 
-  <div id="zorlukEkrani">
-    <div class="difficulty-title">Zorluk Seçin</div>
-    <button class="zorlukBtn" data-zorluk="kolay">🟢 Kolay</button>
-    <button class="zorlukBtn" data-zorluk="orta">🟡 Orta</button>
-    <button class="zorlukBtn" data-zorluk="zor">🔴 Zor</button>
-  </div>
+  <main>
+    <div id="zorlukEkrani">
+      <div class="difficulty-title">Zorluk Seçin</div>
+      <button class="zorlukBtn" data-zorluk="kolay">🟢 Kolay</button>
+      <button class="zorlukBtn" data-zorluk="orta">🟡 Orta</button>
+      <button class="zorlukBtn" data-zorluk="zor">🔴 Zor</button>
+    </div>
 
-  <div id="game-container">
-    <div id="harf-kutusu"></div>
-    <div id="klavye"></div>
-    <button class="yenidenOyna" data-key="yenidenOyna">↻ Yeniden Oyna</button>
-  </div>
+    <div id="game-container">
+      <div id="harf-kutusu"></div>
+      <div id="klavye"></div>
+      <button class="yenidenOyna" data-key="yenidenOyna">↻ Yeniden Oyna</button>
+    </div>
+  </main>
 
   <!-- Statistics Modal -->
   <div id="stats-overlay">

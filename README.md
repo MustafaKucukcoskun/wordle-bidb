@@ -1,95 +1,36 @@
-# 🟩 WORDLE-BİDB
+# Wordle BİDB
 
-Türkçe Wordle oyunu — **BİDB** tarafından geliştirilmiştir.
+**A Turkish Wordle game I built for the ITU IT Department (BİDB).** Guess the five-letter Turkish word in six tries. Each guess colors the letters: green for the right letter in the right place, yellow for a letter that is in the word but elsewhere, gray for a letter that is not in the word.
 
-5 harfli Türkçe kelimeleri tahmin edin! Kolay, Orta ve Zor zorluk seviyeleri arasından seçim yaparak oyuna başlayın. Her tahminden sonra harfler yeşil (doğru yerde), sarı (kelimede var ama yanlış yerde) veya gri (kelimede yok) olarak renklenir.
+🇹🇷 İTÜ Bilgi İşlem Daire Başkanlığı için geliştirdiğim Türkçe Wordle oyunu.
 
-## 🎮 Özellikler
+## Features
 
-- **3 Zorluk Seviyesi**: Kolay, Orta ve Zor — her biri farklı kelime havuzuna sahip
-- **Türkçe Klavye**: Ğ, Ü, Ş, İ, Ö, Ç harfleri dahil tam Türkçe desteği
-- **Akıllı Kelime Seçimi**: Daha önce oynanan kelimeler tekrar gelmez
-- **İstatistik Takibi**: Kazanma oranı, seri ve tahmin dağılımı
-- **Modern Animasyonlar**: Hücre flip, pop ve dans animasyonları
-- **Fiziksel & Sanal Klavye**: Hem ekran klavyesi hem de bilgisayar klavyesi desteği
-- **Responsive Tasarım**: Mobil ve masaüstü cihazlara uyumlu
-- **Dark Glassmorphism Tema**: Modern ve premium görünüm
+- Three difficulty levels (easy, medium, hard), each with its own word pool.
+- Full Turkish keyboard including Ç, Ğ, İ, Ö, Ş and Ü, on screen and on a physical keyboard.
+- Words you have already played don't come back.
+- Statistics (games played, win rate, current and best streak, guess distribution), stored in `localStorage`.
+- Flip, pop and bounce animations, responsive layout for phone and desktop.
 
-## 🚀 Başlangıç
+## Run it
 
-Projeyi çalıştırmak için bir sunucuya ihtiyacınız yoktur. Doğrudan açabilirsiniz:
-
-1. Repoyu klonlayın:
-   ```bash
-   git clone https://github.com/MustafaKucukcoskun/wordle-bidb.git
-   ```
-2. `index.html` dosyasını tarayıcıda açın
-
-Veya bir yerel sunucu ile çalıştırın:
+No build step or server is needed. Open `index.html` in a browser, or serve the folder:
 
 ```bash
-# Python ile
-python -m http.server 8080
-
-# VS Code Live Server eklentisi ile
-# "Go Live" butonuna tıklayın
+git clone https://github.com/MustafaKucukcoskun/wordle-bidb.git
+cd wordle-bidb
+python -m http.server 8080      # http://localhost:8080
 ```
 
-## 🛠️ Teknolojiler
+## Tech
 
-| Teknoloji  | Kullanım             |
-| ---------- | -------------------- |
-| HTML5      | Sayfa yapısı         |
-| CSS3       | Stil ve animasyonlar |
-| JavaScript | Oyun mantığı         |
-| jQuery 3.7 | DOM manipülasyonu    |
-| Geist Font | Tipografi            |
+HTML · CSS · JavaScript · jQuery 3.7 · Geist font
 
-## 📁 Dosya Yapısı
+## Files
 
 ```
-wordle-bidb/
-├── index.html        # Ana sayfa
-├── app.js            # Oyun mantığı ve etkileşim
-├── style.css         # Stil ve animasyonlar
-├── background.jpg    # Arka plan görseli
-├── logo.svg          # Logo
-├── .gitignore        # Git ignore kuralları
-└── README.md         # Bu dosya
+index.html    page layout
+app.js        game logic, word pools, statistics
+style.css     styles and animations
+logo.svg, background.jpg
 ```
-
-## 🎯 Nasıl Oynanır?
-
-1. **Zorluk seçin** — Kolay, Orta veya Zor
-2. **5 harfli bir kelime yazın** — Fiziksel veya sanal klavyeyi kullanabilirsiniz
-3. **Enter'a basın** — Tahminizi gönderin
-4. **İpuçlarını takip edin**:
-   - 🟩 **Yeşil**: Harf doğru yerde
-   - 🟨 **Sarı**: Harf kelimede var ama yanlış yerde
-   - ⬛ **Gri**: Harf kelimede yok
-5. **6 hakkınız var** — Kelimeyi bulmaya çalışın!
-
-## 📊 İstatistikler
-
-Oyun sonunda istatistiklerinizi görebilirsiniz:
-
-- Toplam oynanan oyun sayısı
-- Kazanma yüzdesi
-- Mevcut ve en iyi kazanma serisi
-- Tahmin dağılımı grafiği
-
-İstatistikler tarayıcınızın `localStorage`'ında saklanır.
-
-## 🤝 Katkıda Bulunma
-
-1. Bu repoyu fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeni-ozellik`)
-3. Değişikliklerinizi commit edin (`git commit -m 'feat: yeni özellik'`)
-4. Branch'inizi push edin (`git push origin feature/yeni-ozellik`)
-5. Pull Request açın
-
-## 📄 Lisans
-
-Bu proje eğitim amacıyla geliştirilmiştir.
-
----
